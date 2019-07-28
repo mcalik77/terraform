@@ -1,7 +1,7 @@
 resource "aws_security_group" "sec1" {
   name        = "sec1"
-  description = "Allow ssh"
-  vpc_id      = "vpc-f469098e"
+  description = "Allow SSH"
+  vpc_id      = "vpc-1471ad6e"
 
   ingress {
     from_port   = 22
@@ -16,10 +16,11 @@ resource "aws_security_group" "sec1" {
     cidr_blocks     = ["0.0.0.0/0"]
   }
 
+  
   tags = {
-      Name = "Dev"
-      Dept = "IT"
-      Group = "April"
-      Created_by = "Mustafa"
-  }
+        Name = "Dev"
+        Dept =  "IT"
+        Group = "April"
+        Created_by = "Mustafa"
+    }
 }
