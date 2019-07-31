@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "mybucket-mcalik"
+  bucket = "mybucket-mcalik1"
   acl    = "private"
+  region = "eu-west-1"
 
   tags = {
         Name = "Dev"
